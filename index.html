@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MQuel - DJ Script</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+  </head>
+
+  <body>
+    <h4 class="author">MQuel</h4>
+    <div class="dj-container">
+      <!-- Start AppHeader -->
+      <div class="dj-row" id="AppHeader">
+        <div class="dj-col">
+          <!-- App Header -->
+          <div class="dj-app-header">
+            <h1 class="header">X V I</h1>
+            <p class="description">
+              Designed by
+              <a
+                href="https://github.com/murselsen"
+                style="color: white; text-decoration: none"
+                target="_blank"
+                >MQuel</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Start AppContent -->
+      <div class="dj-row" id="AppContent">
+        <div class="dj-col" style="width: 35%;">
+          <div class="dj-app-music">
+            <h3 class="header">Müzik Listesi</h3>
+            <hr class="header-hr" />
+            <div class="dj-app-music-list" id="AppMusicList"></div>
+          </div>
+        </div>
+        <div class="dj-col" style="width: 35%;">
+          <!-- App - Music Add -->
+          <div
+            class="dj-app-music-add"
+            id="dj-app-music-add"
+            style="display: none"
+          >
+            <h3 class="header">Müzik Ekle</h3>
+            <hr class="header-hr" />
+            <div class="dj-app-music-add-content">
+              <i
+                class="fa fa-music"
+                id="dj-app-music-content-toggle-btn"
+                title="Müzik Detay Aç"
+                aria-hidden="true"
+              ></i>
+              <div class="controllers">
+                <i
+                  class="fa fa-plus"
+                  id="dj-app-music-add-btn"
+                  title="Ekle"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  class="fa fa-play"
+                  id="dj-app-music-add-play"
+                  aria-hidden="true"
+                ></i>
+                <i
+                  class="fa fa-times"
+                  id="dj-app-music-add-cancel"
+                  title="Iptal"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="forms">
+                <input
+                  type="url"
+                  class="input-yt"
+                  id="input-yt"
+                  placeholder="YouTube Video Url..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- App - Music Content -->
+          <div class="dj-app-music-content" id="dj-app-music-content">
+            <h3 class="header">
+              Müzik Detay
+              <i
+                class="fa fa-plus"
+                id="dj-app-music-add-toggle-btn"
+                title="Yeni Müzik Ekle"
+                aria-hidden="true"
+              ></i>
+            </h3>
+            <hr class="header-hr" />
+            <div class="dj-app-music-content-detail">
+              <div class="disc">
+                <i class="fa-solid fa-scrubber" aria-hidden="true"></i>
+              </div>
+              <div class="song">
+                <strong id="dj-app-fivem-song-title">
+                  https://youtu.be/Jt86Tk1Vk5o
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+         
+      </div>
+      <!-- Start AppControls -->
+      <div class="dj-row" id="AppControl">
+        <div class="dj-col">
+          <div class="dj-control-view">
+            <i
+              class="fa fa-rotate-left"
+              id="dj-app-music-audio-rotate-left"
+              aria-hidden="true"
+              title="5sn Geri"
+            ></i>
+            <progress
+              class="dj-audio-progress-data"
+              id="dj-audio-progress-data"
+              style="width: 80%; background-color: white"
+              value="14"
+              max="100"
+            ></progress>
+            <i
+              class="fa fa-rotate-right"
+              id="dj-app-music-audio-rotate-right"
+              aria-hidden="true"
+              title="5sn Ileri"
+            ></i>
+            <audio
+              autoplay
+              style="display: none"
+              id="dj-audio"
+              src="assets/media/track3.mp3"
+              controls
+              muted
+            ></audio>
+          </div>
+        </div>
+      </div>
+      <div class="dj-row" id="AppControl2">
+        <div class="dj-col">
+          <div class="dj-control-view-2">
+            <div class="controls">
+              <i
+                class="fa fa-backward"
+                id="dj-app-music-audio-backward"
+                aria-hidden="true"
+                title="Önceki"
+              ></i>
+              <i
+                class="fa fa-play"
+                id="dj-app-music-audio-play"
+                aria-hidden="true"
+                title="Başlat"
+              ></i>
+              <i
+                class="fa fa-pause"
+                id="dj-app-music-audio-pause"
+                aria-hidden="true"
+                title="Durdur"
+              ></i>
+              <i
+                class="fa fa-forward"
+                id="dj-app-music-audio-forward"
+                aria-hidden="true"
+                title="Sonraki"
+              ></i>
+             
+              <i
+                class="fa fa-volume-off"
+                id="dj-app-music-audio-mute"
+                aria-hidden="true"
+                title="Sesi Kapat"
+              ></i>
+
+              <i
+                class="fa fa-volume-down"
+                id="dj-app-music-audio-volume-down"
+                aria-hidden="true"
+                title="Sesi Azalt"
+              ></i>
+
+              <i
+                class="fa fa-volume-up"
+                id="dj-app-music-audio-volume-up"
+                aria-hidden="true"
+                title="Sesi Arttır"
+              ></i>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
