@@ -1,0 +1,45 @@
+@import url("author.css");
+@import url("scroll.css");
+@import url("dj-app-header.css");
+@import url("dj-app-music.css");
+@import url("dj-app-music-add.css");
+@import url("dj-app-music-content.css");
+@import url("dj-app-progress.css");
+@import url("dj-app-control.css");
+.dj-container {
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  top: 14%;
+  bottom: 14%;
+  border-radius: 15px;
+  background-image: url("../img/demo/a8.jpg");
+  background-repeat: round;
+  background-clip: border-box;
+  background-size: cover;
+  padding-inline: 35px;
+  padding-block: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: white;
+}
+.dj-row {
+  display: flex;
+}
+.dj-col {
+  width: 100%;
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+#AppHeader {
+  height: 20%;
+}
+#AppContent {
+  height: 60%;
+}
+#AppControl,
+#AppControl2 {
+  height: 10%;
+}

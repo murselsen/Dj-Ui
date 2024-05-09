@@ -1,0 +1,20 @@
+.dj-app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  align-items: center;
+  box-shadow: 0px 20px 0px 0px white;
+}
+.dj-app-header > .header {
+  opacity: 0.9;
+  padding-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom: 1px solid whitesmoke;
+  font-family: Razier;
+}
+.dj-app-header > .description {
+  margin-top: -10px;
+  opacity: 0.5;
+}

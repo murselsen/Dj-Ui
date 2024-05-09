@@ -1,0 +1,15 @@
+.author {
+  position: absolute;
+  top: 13%;
+  left: 16%;
+  font-size: 36px;
+  z-index: 99;
+  opacity: 0.03;
+  user-select: none;
+}
+.author:hover {
+    cursor: none;
+}
+* {
+    user-select: none;
+}

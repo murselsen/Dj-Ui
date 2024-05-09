@@ -1,0 +1,70 @@
+.dj-control-view {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.dj-control-view > i {
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dj-control-view-2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dj-control-view-2 > i {
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dj-control-view-2 > .controls {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dj-control-view-2 > .controls > i {
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
